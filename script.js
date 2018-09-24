@@ -6,10 +6,6 @@ startButton.addEventListener('click', () => stopwatch.start() )
 let stopButton = document.getElementById( 'stop' )
 stopButton.addEventListener( 'click', () => stopwatch.stop() )
 
-// Stworz instancje klasy ktora pobierze klase przycisku zatrzymujacego czas
-const stopwatch = new Stopwatch(
-document.querySelector( '.stopwatch' ) )
-
 // Stworz konstruktor w klasie i przekaz odpowiednie parametry 
 class Stopwatch {
     constructor( display ) {
@@ -101,3 +97,7 @@ function pad0( value ) {
     // zwroc tablice rezultatow
     return result
 }
+
+// Stworz instancje klasy ktora pobierze klase przycisku zatrzymujacego czas
+const stopwatch = new Stopwatch(
+document.querySelector( '.stopwatch' ) )
